@@ -1,0 +1,356 @@
+﻿<!-- 
+Movie Website Project - A simple website about movies and their descriptions.
+Copyright (C) 2024 TheShinyEnd
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the Movie Website Project Custom License as published by
+the original author(s), either version 1.0 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+Movie Website Project Custom License for more details.
+
+You should have received a copy of the Movie Website Project Custom License
+along with this program.  If not, see <https://github.com/TheShinyEnd/movie-website/blob/main/LICENSE>.
+
+Same applies with every single item in this "project" repository.
+    But most importantly, enjoy.
+-->
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+  <title>Movies</title>
+  <link rel="icon" type="image/x-icon" href="logo.ico" />
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css" />
+  <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+  <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<form id="form1" runat="server">
+  <style>
+    .credentialscontainer {
+      position: fixed;
+      top: 2vh;
+      right: 2vh;
+      padding: 15px 12px;
+      text-align: center;
+      transition: opacity 0.5s;
+      z-index: 100;
+      background-color: rgba(1, 1, 1, 0.2);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .credentialsbutton {
+      background-color: rgba(0.5, 0.5, 0.5, 0.2);
+      color: #fff;
+      padding: 8px 10px;
+      margin: 10px 4px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: inherit;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .home-icon-container {
+      position: fixed;
+      top: 2vh;
+      right: 9vw;
+      z-index: 1000000000;
+      width: 2%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .image-dropdown {
+      transform: translate(-50%, 0%);
+      display: none;
+      position: absolute;
+      z-index: 1000000;
+      background-color: rgb(9, 24, 25, 0.30);
+      padding: 3px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 1.5s;
+    }
+
+    .image-dropdown.show {
+      display: block;
+      opacity: 1;
+    }
+
+    .image-item {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image-item img:not(.overlay-image) {
+      width: 100px;
+      height: auto;
+      margin: 5px;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+      z-index: 10000000;
+      transition: 0.5s ease-out;
+    }
+
+    .image-item:hover img:not(.overlay-image) {
+      filter: blur(5px);
+    }
+
+    .overlay-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: auto;
+      margin: 5px;
+      object-fit: cover;
+      z-index: 10000000;
+      transition: 0.5s ease-out;
+      transform: translate(-55%, -55%) scale(0.3);
+      opacity: 0;
+      transition: opacity 0.5s;
+      z-index: 1;
+    }
+
+    .image-item:hover .overlay-image {
+      opacity: 1;
+    }
+
+    .image-dropdown .home-icon-container {
+      position: relative;
+      top: auto;
+      right: auto;
+      width: 30px;
+      height: auto;
+      margin: 5px auto;
+      cursor: pointer;
+    }
+
+    .home-icon {
+      width: 100%;
+      height: auto;
+    }
+
+    .alert-box {
+      display: none;
+      position: fixed;
+      top: 2%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ff0000;
+      color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      animation: slideIn 1s forwards, fadeOutandslideout 1s 3.5s forwards;
+    }
+
+    @keyframes slideIn {
+      0% { transform: translate(-50%, -120%); }
+      100% { transform: translate(-50%, 0%); }
+    }
+
+    @keyframes fadeOutandslideout {
+      0% { opacity: 0.8; }
+      100% { opacity: 0;  transform: translate(-50%, -100%); filter: blur(20px);}
+    }
+
+    .image-dropdown {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 10px;
+    }
+
+    .image-dropdown .home-icon-container {
+      width: 100px;
+      height: auto;
+      margin: 5px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+
+    .home-icon {
+      width: 100%;
+      height: auto;
+    }
+
+    .welcometext {
+      color: whitesmoke;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px black;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 8px 12px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 101;
+    }
+
+    .welcometext:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      z-index: -1;
+    }
+  </style>
+
+  <div id="imageDropdown" class="image-dropdown">
+    <a onclick="fadeOutAndRedirect('movies.aspx'); return false;" class="image-item">
+      <img src="homeicon.png" alt="Item 1">
+      <img class="overlay-image" src="replayimg.png" alt="Overlay Image">
+    </a>
+    <a onclick="fadeOutAndRedirect('avengers.aspx'); return false;" class="image-item">
+      <img src="avengers background.jpg" alt="Item 1">
+      <img class="overlay-image" src="replayimg.png" alt="Overlay Image">
+    </a>
+    <a onclick="fadeOutAndRedirect('findingnemo.aspx'); return false;" class="image-item">
+      <img src="finding nemo background.jpg" alt="Item 1">
+      <img class="overlay-image" src="replayimg.png" alt="Overlay Image">
+    </a>
+    <a onclick="fadeOutAndRedirect('lotr.aspx'); return false;" class="image-item">
+      <img src="lord of the rings background.jpg" alt="Item 1">
+      <img class="overlay-image" src="replayimg.png" alt="Overlay Image">
+    </a>
+    <a onclick="fadeOutAndRedirect('starwars.aspx'); return false;" class="image-item">
+      <img src="star wars background.jpg" alt="Item 1">
+      <img class="overlay-image" src="replayimg.png" alt="Overlay Image">
+    </a>
+    <a onclick="fadeOutAndRedirect('titanic.aspx'); return false;" class="image-item">
+      <img src="titanic background.jpg" alt="Item 1">
+      <img class="overlay-image" src="replayimg.png" alt="Overlay Image">
+    </a>
+  </div>
+
+  <div class="credentialscontainer" id="loginRegisterContainer">
+    <!-- This section will be dynamically updated by JavaScript -->
+  </div>
+
+  <div>
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+  </div>
+
+  <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+
+  <div id="alertBox" class="alert-box">
+    <span id="alertMessage"></span>
+  </div>
+</form>
+
+<script>
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    function deleteCookie(name) {
+        setCookie(name, "", -1);
+    }
+
+    $(document).ready(function () {
+        checkLogin();
+    });
+
+    function checkLogin() {
+        var userData = getCookie('UserData');
+
+        if (userData) {
+            var stringtlc = userData.split('&');
+            var username = stringtlc[0].split('=')[1];
+            var isAdmin = stringtlc[1].split('=')[1] === 'True';
+            console.log("admin: " + isAdmin + (isAdmin.toString().toLowerCase() === 'true'));
+
+            $("#loginRegisterContainer").html(`
+        <label id='WelcomeLabel' class='welcometext'>Welcome ${username}!</label>
+        <a href="#" class="credentialsbutton" onclick="logout(); return false;">Logout</a>
+        ${isAdmin.toString().toLowerCase() === 'true' ? `<a href="#" class="credentialsbutton" onclick="window.location.href='AdminPanel.aspx'; return false;">Admin Panel</a>` : ''}
+      `);
+        } else {
+            $("#loginRegisterContainer").html(`
+        <a href="#" class="credentialsbutton" onclick="fadeOutAndRedirect('login.aspx'); return false;">LOGIN</a>
+        <a href="#" class="credentialsbutton" onclick="fadeOutAndRedirect('register.aspx'); return false;">REGISTER</a>
+      `);
+        }
+    }
+
+    function showAlert(message) {
+        var alertBox = document.getElementById('alertBox');
+        var alertMessage = document.getElementById('alertMessage');
+
+        alertMessage.textContent = message;
+        alertBox.style.display = 'block';
+
+        setTimeout(function () {
+            alertBox.style.display = 'none';
+        }, 4600);
+    }
+
+    function logout() {
+        deleteCookie("UserData");
+        location.reload();
+    }
+
+    document.addEventListener('mousedown', function (event) {
+        var dropdown = document.getElementById('imageDropdown');
+        var isClickInsideDropdown = dropdown.contains(event.target);
+
+        if (event.button === 1 && !isClickInsideDropdown) {
+            dropdown.style.left = event.pageX + 'px';
+            dropdown.style.top = event.pageY + 'px';
+            dropdown.classList.add('show');
+            dropdown.style.transition = "opacity 0.5s";
+            dropdown.style.opacity = 1;
+            document.addEventListener('mousedown', hideDropdown, true);
+        }
+    });
+
+    function hideDropdown(event) {
+        var dropdown = document.getElementById('imageDropdown');
+        var isClickInsideDropdown = dropdown.contains(event.target);
+
+        if (event.button !== 1 && !isClickInsideDropdown) {
+            dropdown.classList.remove('show');
+            dropdown.style.opacity = 0;
+            document.removeEventListener('mousedown', hideDropdown, true);
+        }
+    }
+
+    function fadeOutAndRedirect(redirectLocation) {
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+            window.location.href = redirectLocation;
+        }, 1500);
+    }
+</script>
+</body>
+</html>

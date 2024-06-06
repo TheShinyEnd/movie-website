@@ -1,0 +1,59 @@
+Movie Website Project - Custom License
+Version 1.0, June 6, 2024
+
+## Preamble
+
+This license ensures that the Movie Website Project remains free and open, while ensuring that proper credit is given to the original author(s) and that the software is not used for commercial purposes without permission.
+
+## Terms and Conditions
+
+### 0. Definitions
+
+"This License" refers to the Movie Website Project Custom License.
+"The Program" refers to the Movie Website Project, including all source code, visual elements, and documentation.
+"You" refers to the individual or entity exercising rights under this License.
+
+### 1. License Grant
+
+Subject to the terms and conditions of this License, You are hereby granted a worldwide, royalty-free, non-exclusive, perpetual (for the duration of the applicable copyright) license to:
+
+a) Use the Program for any non-commercial purpose.
+b) Study, modify, and distribute the Program or any derivative works thereof, provided that:
+   - You comply with the terms and conditions of the GNU General Public License Version 3.0.
+   - You include a complete copy of this License with every copy of the Program or derivative work that You distribute.
+
+### 2. Attribution
+
+You must give appropriate credit to the original author(s) of the Program. This credit should be provided in a manner that is reasonable and customary for the medium in which the Program is used, but not in any way that suggests the original author(s) endorse You or Your use of the Program. The following acknowledgment should be included in any distributions or derivative works:
+
+This project is based on the Movie Website Project created by TheShinyEnd.
+
+
+### 3. Non-Commercial Use
+
+The Program may not be used for commercial purposes. "Commercial purposes" means any use of the Program intended for or directed toward commercial advantage or monetary compensation. If You wish to use the Program for commercial purposes, You must obtain explicit permission from the original author(s).
+
+### 4. Compliance with the GPL
+
+In addition to the above terms, You must comply with all the terms and conditions of the GNU General Public License Version 3.0, which can be found at the following link: [GNU General Public License Version 3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+
+### 5. No Warranty
+
+THE PROGRAM IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE PROGRAM OR THE USE OR OTHER DEALINGS IN THE PROGRAM.
+
+## Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS PROGRAM, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+## License Updates
+
+The original author(s) reserve the right to update, modify, or change the terms of this License at any time and for any reason. Such updates shall be effective upon publication of the revised License. You agree to be bound by any future versions of this License.
+
+## How to Apply These Terms to Your New Programs
+
+If you develop a new program, and you want it to be of the greatest possible use to the public, the best way to achieve this is to make it free software which everyone can redistribute and change under these terms.
+
+To do so, attach the following notices to the program. It is safest to attach them to the start of each source file to most effectively state the exclusion of warranty; and each file should have at least the "copyright" line and a pointer to where the full notice is found.
+
+
+## End of Terms and Conditions

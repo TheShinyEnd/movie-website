@@ -18,10 +18,3 @@ Note current requirements are:
 
 
 
-I know that I added copyright infrigment rights against commerical use(and other stuff) and forgot to include credits where they are due, I understand the sin, but I never intended to release it to the public as a repository. The code is old, and I have no idea how to "reverse search code", like google lens has of images, but for code. And of course, credit is where is due, to the original owners, especially as per the animations of the login and register, they were made(a basic version with the animations) back in 2019.. Yes a lot of years ago, I have no clue from where I got the code for both, But I glad I did, both animations are absolutely amazing and the login and register wouldn't seem so alive and playful without them. I am greatly sorry for the original creators if at some point in the future it seems like I am the "creator" of the animations, which by no means I am. I hope it clears things up!
-
-
-Full disclosure: I'm a GitHub newbie. Figured out the basics about three years ago, and now here we are. Still learning the ropes.
-
-Alright, I'll leave it at that.
-

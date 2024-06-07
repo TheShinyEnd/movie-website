@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\my stuff\\website building stuff\\WebSite2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|g:\\my stuff\\website building stuff\\website2\\website2\\movies.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|solutionrelative:website2\\movies.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|G:\\my stuff\\website building stuff\\WebSite2\\website2\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|solutionrelative:website2\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|G:\\my stuff\\website building stuff\\WebSite2\\website2\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|solutionrelative:website2\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|G:\\my stuff\\website building stuff\\WebSite2\\website2\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|solutionrelative:website2\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|G:\\my stuff\\website building stuff\\WebSite2\\website2\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|solutionrelative:website2\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|G:\\my stuff\\website building stuff\\WebSite2\\website2\\masterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|solutionrelative:website2\\masterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|G:\\my stuff\\website building stuff\\WebSite2\\website2\\avengers.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{928C6DCE-6BE5-4A03-AAFB-6A5F9E35E5EF}|G:\\my stuff\\website building stuff\\WebSite2\\WebSite2|solutionrelative:website2\\avengers.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 235,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 391,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "movies.aspx",
+              "DocumentMoniker": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\movies.aspx",
+              "RelativeDocumentMoniker": "WebSite2\\movies.aspx",
+              "ToolTip": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\movies.aspx",
+              "RelativeToolTip": "WebSite2\\movies.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-02T16:03:55.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "register.aspx.cs",
+              "DocumentMoniker": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\register.aspx.cs",
+              "RelativeDocumentMoniker": "WebSite2\\register.aspx.cs",
+              "ToolTip": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\register.aspx.cs",
+              "RelativeToolTip": "WebSite2\\register.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T16:03:55.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "login.aspx.cs",
+              "DocumentMoniker": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\login.aspx.cs",
+              "RelativeDocumentMoniker": "WebSite2\\login.aspx.cs",
+              "ToolTip": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\login.aspx.cs",
+              "RelativeToolTip": "WebSite2\\login.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T16:03:55.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "login.aspx",
+              "DocumentMoniker": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\login.aspx",
+              "RelativeDocumentMoniker": "WebSite2\\login.aspx",
+              "ToolTip": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\login.aspx",
+              "RelativeToolTip": "WebSite2\\login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-02T16:03:55.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "register.aspx",
+              "DocumentMoniker": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\register.aspx",
+              "RelativeDocumentMoniker": "WebSite2\\register.aspx",
+              "ToolTip": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\register.aspx",
+              "RelativeToolTip": "WebSite2\\register.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-02T16:03:55.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MasterPage.master",
+              "DocumentMoniker": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\MasterPage.master",
+              "RelativeDocumentMoniker": "WebSite2\\MasterPage.master",
+              "ToolTip": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\MasterPage.master",
+              "RelativeToolTip": "WebSite2\\MasterPage.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-02T16:03:55.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "avengers.aspx",
+              "DocumentMoniker": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\avengers.aspx",
+              "RelativeDocumentMoniker": "WebSite2\\avengers.aspx",
+              "ToolTip": "G:\\my stuff\\website building stuff\\WebSite2\\WebSite2\\avengers.aspx",
+              "RelativeToolTip": "WebSite2\\avengers.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-06-02T16:03:55.278Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

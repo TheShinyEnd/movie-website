@@ -252,6 +252,7 @@ html {
                         window.location.href = "movies.aspx";
                     } else {
                         showAlert("Login credentials are incorrect.");
+                        window.location.href = "register.aspx";
                     }
                 },
                 error: function (response) {

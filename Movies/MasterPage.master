@@ -1,22 +1,21 @@
 ﻿<!-- 
 Movie Website Project - A simple website about movies and their descriptions.
 Copyright (C) 2024 TheShinyEnd
-
 This program is free software: you can redistribute it and/or modify
 it under the terms of the Movie Website Project Custom License as published by
 the original author(s), either version 1.0 of the License, or (at your option) any later version.
-
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 Movie Website Project Custom License for more details.
-
 You should have received a copy of the Movie Website Project Custom License
 along with this program.  If not, see <https://github.com/TheShinyEnd/movie-website/blob/main/LICENSE>.
-
 Same applies with every single item in this "project" repository.
     But most importantly, enjoy.
 -->
+
+
+
 
 <!DOCTYPE html>
 <html>
@@ -293,7 +292,7 @@ Same applies with every single item in this "project" repository.
             $("#loginRegisterContainer").html(`
         <label id='WelcomeLabel' class='welcometext'>Welcome ${username}!</label>
         <a href="#" class="credentialsbutton" onclick="logout(); return false;">Logout</a>
-        ${isAdmin.toString().toLowerCase() === 'true' ? `<a href="#" class="credentialsbutton" onclick="window.location.href='AdminPanel.aspx'; return false;">Admin Panel</a>` : ''}
+        ${isAdmin.toString().toLowerCase() === 'true' ? `<a href="#" class="credentialsbutton" onclick="fadeOutAndRedirect('AdminPanel.aspx'); return false;">Admin Panel</a>` : ''}
       `);
         } else {
             $("#loginRegisterContainer").html(`
@@ -351,6 +350,8 @@ Same applies with every single item in this "project" repository.
             window.location.href = redirectLocation;
         }, 1500);
     }
+
+
 </script>
 </body>
 </html>
